@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Belanja Toko</title>
+    <h1>Kalkulator Belanja Toko</h1>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ <div class="container">
+    <p>Web untuk hitung total belanja</p>
+    <label for="nama">Nama Pembeli</label>
+    <input type="text"id="nama">
+
+    <label for="harga">Harga Satuan</label>
+    <input type="number"id="harga">
+
+    <label for="jumlah">Jumlah Barang</label>
+    <input type="number"id="jumlah">
+
+    <label for="status">Status</label>
+    <select id="status">
+        <option value="biasa">Biasa</option>
+        <option value="member">Member</option>
+        <select>
+
+            <button onclick="hitungBelanja()">Hitung</button>
+             <p id="hasil" class="hasil"></p>
+   <h2>Aturan Diskon</h2>
+     <Table>
+        <tr>
+            <th>Subtotal Belanja</th>
+            <th>Diskon</th>
+        </tr>
+
+        <tr>
+           <td>Kurang dari Rp50.000</td>
+           <td>0%</td>
+        </tr>
+
+        <tr>
+            <td>Rp50.00 sampai Rp99.999</td>
+            <td>5%</td>
+        </tr>
+        
+        <tr>
+            <td>Rp100.000 ke atas</td>
+            <td>10%</td>
+        </tr>
+
+        <tr>
+            <td>Status Member</td>
+            <td>Tambahan 5%</td>
+        </tr>
+       </Table>
+
+        <h2>Simulasi Harga (tanpa diskon)</h2>
+    <p id="simulasi"></p>
+       </div>
+
+       <script src="script.js"></script>
+</body>
+</html>
